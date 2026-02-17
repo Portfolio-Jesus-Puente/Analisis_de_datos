@@ -17,6 +17,15 @@
             padding: 60px 20px 30px;
         }
 
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
         header h1 {
             font-size: 2.4rem;
             font-weight: 600;
@@ -61,6 +70,50 @@
             margin-bottom: 40px;
         }
 
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .skills-list li {
+            background: #e9f3ff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px 18px;
+            background: #0078d4;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .buttons a:hover {
+            background: #005a9e;
+        }
+
+        .timeline {
+            border-left: 3px solid #0078d4;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        .timeline div {
+            margin-bottom: 20px;
+        }
+
+        .timeline span {
+            font-weight: bold;
+            color: #0078d4;
+        }
+
         iframe {
             width: 100%;
             height: 550px;
@@ -80,11 +133,12 @@
 <body>
 
 <header>
-    <h1>Portfolio de Análisis de Datos</h1>
+    <img src="https://raw.githubusercontent.com/Portfolio-Jesus-Puente/Analisis_de_datos/main/proyectos/foto-jesus.jpg" alt="Foto de Jesús Puente">
+
+    <h1>Jesús Puente</h1>
     <p>
-        Bienvenido. Aquí presento proyectos desarrollados con <strong>Python</strong>, 
-        <strong>Jupyter Notebook</strong> y <strong>Power BI</strong>, enfocados en análisis exploratorio, 
-        visualización y toma de decisiones basada en datos.
+        Analista de datos especializado en Python, Jupyter Notebook y Power BI.  
+        Transformo datos en información clara para apoyar decisiones estratégicas.
     </p>
 </header>
 
@@ -94,7 +148,55 @@
     <a href="proyectos/analisis_power_BI/">Dashboard Power BI</a>
 </nav>
 
-<div class="section">
+<section class="section">
+
+    <!-- SOBRE MÍ -->
+    <div class="card">
+        <h2>Sobre mí</h2>
+        <p>
+            Soy un profesional apasionado por el análisis de datos y la visualización.  
+            Me gusta resolver problemas, encontrar patrones y comunicar resultados de forma clara y efectiva.
+        </p>
+
+        <div class="buttons">
+            <a href="AQUI_TU_LINKEDIN" target="_blank">LinkedIn</a>
+            <a href="AQUI_TU_GITHUB" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <!-- HABILIDADES -->
+    <div class="card">
+        <h2>Habilidades</h2>
+        <ul class="skills-list">
+            <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+            <li>Jupyter Notebook</li>
+            <li>Power BI</li>
+            <li>Análisis Exploratorio de Datos (EDA)</li>
+            <li>Visualización de Datos</li>
+            <li>SQL (básico/intermedio)</li>
+        </ul>
+    </div>
+
+    <!-- EXPERIENCIA -->
+    <div class="card">
+        <h2>Experiencia</h2>
+        <div class="timeline">
+            <div>
+                <span>2024 – Actualidad</span><br>
+                Proyectos personales de análisis de datos y dashboards interactivos.
+            </div>
+            <div>
+                <span>2023 – 2024</span><br>
+                Formación en Python, análisis de datos y visualización.
+            </div>
+            <div>
+                <span>2022 – 2023</span><br>
+                Inicio en el mundo del análisis de datos y herramientas BI.
+            </div>
+        </div>
+    </div>
+
+    <!-- DASHBOARD -->
     <div class="card">
         <h2>Dashboard destacado</h2>
         <p>Visualización interactiva desarrollada en Power BI.</p>
@@ -104,7 +206,8 @@
                 allowFullScreen="true">
         </iframe>
     </div>
-</div>
+
+</section>
 
 <footer>
     © 2026 Jesús Puente — Análisis de Datos
